@@ -1,0 +1,51 @@
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.list__items {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #d9d9d9;
+
+}
+
+.list__items--hidden {
+    display: none;
+}
+
+.list__items--done {
+    text-decoration: line-through;
+}
+
+.list__button--delete {
+    border: none;
+    background-image: url(./delete.png);
+    width: 23px;
+    height: 23px;
+    margin-left: auto;
+
+}
+
+.list__button--delete:hover {
+    transform: scale(1.1);
+}
+
+.list__button--notdone {
+    border: none;
+    background-image: url(./notdone.png);
+    width: 23px;
+    height: 23px;
+    margin-right: 15px;
+}
+
+.list__button--notdone:hover {
+    transform: scale(1.1);
+}
+
+.list__button--done {
+    background-image: url(./done.png);
+}
