@@ -15,7 +15,7 @@
     color: white;
     padding: 10px;
     border: none;
-    transition: color 0.5s;
+    transition: 0.8s;
 }
 
 .form__button:hover {
