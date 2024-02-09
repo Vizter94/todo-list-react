@@ -20,6 +20,7 @@ export const ItemStyled = styled.li`
 `;
 
 export const DeleteStyled = styled.button`
+  color: white;
   background-color: red;
   border: none;
   width: 30px;
@@ -34,6 +35,7 @@ export const DeleteStyled = styled.button`
 `;
 
 export const DoneStyled = styled.button`
+  color: white;
   border: none;
   width: 30px;
   height: 30px;
