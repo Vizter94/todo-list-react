@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-const savedTasks = localStorage.getItem("tasks");
-
 export const useTasks = () => {
-  const [tasks, setTasks] = useState(savedTasks ? JSON.parse(savedTasks) : []);
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) ?? []
+  );
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
