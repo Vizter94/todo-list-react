@@ -6,7 +6,7 @@ import {
   TextStyled,
 } from "./styled";
 
-const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
+const TaskList = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
   <ListStyled>
     {tasks.map((tasks) => (
       <ItemStyled key={tasks.id} hidden={tasks.done && hideDone}>
@@ -18,4 +18,4 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
   </ListStyled>
 );
 
-export default Tasks;
+export default TaskList;
